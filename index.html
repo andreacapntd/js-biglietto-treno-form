@@ -6,6 +6,47 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div>
+      <div>
+        <label for="name">Nome</label>
+        <input id="name" type="text" name="name" value="">
+      </div>
+      <div>
+        <label for="km">Chilometri da percorrere</label>
+        <input id="km" type="number" name="km" value="">
+      </div>
+      <div>
+        <label for="category">Categoria</label>
+        <select id="category"  name="category">
+          <option value="Maggiorenne">Maggiorenne</option>
+          <option value="Minorenne">Minorenne</option>
+          <option value="Over65">Over 65</option>
+        </select>
+      </div>
+      <button id="calcolaBiglietto" type="button" name="calcolaBiglietto">Calcola</button>
+      <button id="cancellaBiglietto" type="button" name="cancellaBiglietto">Cancella</button>
+    </div>
+    <div id="ticket" class="hidden">
+      <table>
+        <thead>
+          <th>Passeggero</th>
+          <th>Num.Treno</th>
+          <th>Carrozza</th>
+          <th>Prezzo Biglietto</th>
+          <th>Categoria</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="passenger"></th>
+            <th id="trainNumber"></th>
+            <th id="carrozza"></th>
+            <th id="ticketPrice"></th>
+            <th id="passengerCategory"></th>
+          </tr>
+        </tbody>
+      </table>
 
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
